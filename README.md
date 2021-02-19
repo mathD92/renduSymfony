@@ -5,9 +5,10 @@ git clone https://github.com/mathD92/renduSymfony.git
 
 ### Carger les dépendence
  cd renduSymfony 
+ 
  composer install 
 
-Dans le .env mettre à jours ses informations concernant la base de donnéest.
+Dans le .env mettre à jours ses informations concernant la base de donnée.
 
 ### Lier sa base de donnée
 php bin/console doctrine:database:create
