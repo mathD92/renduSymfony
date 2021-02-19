@@ -8,9 +8,8 @@ git clone https://github.com/mathD92/renduSymfony.git
  
  composer install 
 
-Dans le .env mettre à jours ses informations concernant la base de donnée.
-
 ### Lier sa base de donnée
+Dans le .env mettre à jours ses informations concernant la base de donnée.
 php bin/console doctrine:database:create
 
 
