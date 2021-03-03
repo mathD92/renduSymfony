@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+    <style>
+        .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+        .example-wrapper code { background: #F5F5F5; padding: 2px 5px; }
+        body { background-color: #333333 }
+        h1 { text-align: center; color: white }
+        p { color: white }
+        li { list-style: none; margin: 10px 0; padding: 15px; border-radius: 7px}
+        .home { background-color: #FF0000AA;}
+        .media { background-color: #00FF00AA;}
+    </style>
+
+<div class="example-wrapper">
+    <h1>Netfleet</h1>
+
+
+    <ul>
+        {% for route in mediaRoute %}
+            {% if route.class == 'home' %}
+                <li class="home">{{ route.content }}</li>
+            {% endif %}
+            {% if route.class == 'media' %}
+                <li class="media">{{ route.content }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+</div>
+{% endblock %}
